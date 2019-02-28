@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <!-- Add new Tab -->
+        <tab id="dckap" translate="label" sortOrder="10">
+            <label>DCKAP</label>
+        </tab>
+        <section id="mpmarketplace" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0"
+                 showInStore="0">
+            <label>Marketplace</label>
+            <tab>dckap</tab>
+            <resource>DCKAP_Base::market</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+                <label>DCKAP Marketplace</label>
+                <frontend_model>DCKAP\Base\Block\Adminhtml\System\Config\Extensions</frontend_model>
+                <comment><![CDATA[
+                <iframe id="mp-core-partners" src="http://localhost/localstore/Magento%202%20Extensions%20-%20DCKAP%20Magento%20Store.html" frameborder="0" scrolling="no" width="100%" height="1700px" style="min-height: 800px;"></iframe>
+                ]]></comment>
+            </group>
+        </section>
+    </system>
+</config>
